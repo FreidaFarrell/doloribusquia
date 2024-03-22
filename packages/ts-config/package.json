@@ -1,0 +1,42 @@
+{
+  "name": "@silverhand/ts-config",
+  "version": "5.0.0",
+  "description": "Common TypeScript config for Silverhand.",
+  "author": "Gao Sun <gaosun.dev@gmail.com>",
+  "homepage": "https://github.com/silverhand-io/configs#readme",
+  "license": "MIT",
+  "main": "tsconfig.base.json",
+  "files": [
+    "tsconfig.base.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverhand-io/configs.git"
+  },
+  "scripts": {
+    "lint": "eslint \"tests/**\""
+  },
+  "bugs": {
+    "url": "https://github.com/silverhand-io/configs/issues"
+  },
+  "devDependencies": {
+    "@silverhand/eslint-config": "workspace:^",
+    "@types/eslint": "^8.40.2",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": "^20.9.0"
+  },
+  "eslintConfig": {
+    "extends": "@silverhand"
+  },
+  "prettier": "@silverhand/eslint-config/.prettierrc"
+}
